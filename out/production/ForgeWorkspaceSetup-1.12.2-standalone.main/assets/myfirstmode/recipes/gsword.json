@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    " G ",
+    " S "
+  ],
+  "key": {
+    "G": {
+      "item": "myfirstmode:gordriniumingot"
+    },
+    "S": {
+      "item": "minecraft:stick",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "myfirstmode:gsword",
+    "count": 1
+  }
+}
