@@ -11,7 +11,9 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import ru.bt.test.proxy.CommonProxy;
+import ru.bt.test.registers.OreGen;
 
 @Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION, name = ExampleMod.NAME)
 public class ExampleMod {
@@ -34,6 +36,7 @@ public class ExampleMod {
     public void load(FMLInitializationEvent event) {
         Registry.furnaceRecipes();
         proxy.load(event);
+        GameRegistry.registerWorldGenerator(new OreGen(), 10);
     }
 
     @EventHandler
