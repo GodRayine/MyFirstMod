@@ -36,7 +36,7 @@ public class ExampleMod {
     public void load(FMLInitializationEvent event) {
         Registry.furnaceRecipes();
         proxy.load(event);
-        GameRegistry.registerWorldGenerator(new OreGen(), 10);
+
     }
 
     @EventHandler
