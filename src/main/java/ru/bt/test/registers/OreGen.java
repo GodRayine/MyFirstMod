@@ -17,7 +17,7 @@ public class OreGen implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if (world.provider.getDimension() == 0) {
-            runGenerator(BlockRegister.GORDRINIUM.getDefaultState(), 1+random.nextInt(2), 2, 0, 15, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
+            runGenerator(BlockRegister.GORDRINIUM.getDefaultState(), 1+random.nextInt(3), 2, 5, 15, BlockMatcher.forBlock(Blocks.STONE), world, random, chunkX, chunkZ);
         }
     }
 
