@@ -9,16 +9,20 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import ru.bt.test.Gordrinium;
+import ru.bt.test.blocks.ForgeTable;
 
 public class BlockRegister {
     public static Block GORDRINIUM = new Gordrinium();
+    public static Block FORGE_TABLE = new ForgeTable();
     public static void register() {
         setRegister(GORDRINIUM);
+        setRegister(FORGE_TABLE);
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRender() {
         setRender(GORDRINIUM);
+        setRender(FORGE_TABLE);
     }
 
     private static void setRegister(Block block) {

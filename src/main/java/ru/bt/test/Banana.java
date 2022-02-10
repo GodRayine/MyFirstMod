@@ -7,7 +7,7 @@ public class Banana extends ItemFood {
         super(6, 3, false);
         setRegistryName("banana");
         setTranslationKey("banana");
-        setCreativeTab(ExampleMod.Aboba);
+        setCreativeTab(ExampleMod.MFM);
         setAlwaysEdible();
         setMaxStackSize(16);
     }

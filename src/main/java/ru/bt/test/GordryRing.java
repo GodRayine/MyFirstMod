@@ -9,7 +9,7 @@ public class GordryRing extends Item implements IBauble {
     public GordryRing() {
         setRegistryName("gring");
         setTranslationKey("gring");
-        setCreativeTab(ExampleMod.Aboba);
+        setCreativeTab(ExampleMod.MFM);
         setMaxStackSize(1);
     }
 

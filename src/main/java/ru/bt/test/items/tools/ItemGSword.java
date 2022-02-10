@@ -8,7 +8,7 @@ public class ItemGSword extends ItemSword {
         super(ExampleMod.TOOL_MATERIAL);
         setRegistryName("gsword");
         setTranslationKey("gsword");
-        setCreativeTab(ExampleMod.Aboba);
+        setCreativeTab(ExampleMod.MFM);
         setMaxStackSize(1);
     }
 

@@ -20,8 +20,10 @@ public class ExampleMod {
     public static final String VERSION = "0.0.1";
     public static final Item.ToolMaterial TOOL_MATERIAL = EnumHelper.addToolMaterial("myfirstmode:gordriniumingot", 3, 2000,50F, 20F, 12);
 
+    @Mod.Instance
+    public static  ExampleMod instance;
 
-    public static final CreativeTabs Aboba = new CreativeTabs(ExampleMod.MODID) {
+    public static final CreativeTabs MFM = new CreativeTabs(ExampleMod.MODID) {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(Items.APPLE);

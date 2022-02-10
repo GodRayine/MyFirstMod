@@ -7,6 +7,6 @@ public class GordriniumIngot extends Item {
     public GordriniumIngot(){
         setRegistryName("gordriniumingot");
         setTranslationKey("gordriniumingot");
-        setCreativeTab(ExampleMod.Aboba);
+        setCreativeTab(ExampleMod.MFM);
     }
 }
